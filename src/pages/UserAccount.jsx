@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from '../composants/Navbar';
 
 const User = () => {
   return (
     <>
-      <Navbar />
       <main className="main bg-dark">
         <div className="header">
           <h1>Welcome back<br />Tony Jarvis!</h1>

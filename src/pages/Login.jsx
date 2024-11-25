@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from '../composants/Navbar';
 
 const SignIn = () => {
   return (
     <>
-      <Navbar />
       <main className="main bg-dark">
         <section className="sign-in-content">
           <i className="fa fa-user-circle sign-in-icon"></i>

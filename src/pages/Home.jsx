@@ -1,13 +1,11 @@
 import React from 'react';
-import Navbar from '../composants/Navbar';
-import chatIcon from '../img/icon-chat.png';
-import moneyIcon from '../img/icon-money.png';
-import securityIcon from '../img/icon-security.png';
+import chatIcon from '../img/icon-chat.webp';
+import moneyIcon from '../img/icon-money.webp';
+import securityIcon from '../img/icon-security.webp';
 
 const Home = () => {
   return (
     <>
-      <Navbar />
       <main>
         <div className="hero">
           <section className="hero-content">
