@@ -71,7 +71,7 @@ body {
 }
 
 .hero {
-  background-image: url('/ArgentBank-Frontend-main/ArgentBank/src/img/bank-tree.webp');
+  background-image: url('../../img/bank-tree.webp');
   background-position: 0 -50px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -165,13 +165,16 @@ body {
   color: #fff;
 }
 
+.sign-in-body {
+  height: 80vh;
+}
+
 .sign-in-content {
   box-sizing: border-box;
   background-color: white;
   width: 300px;
-  margin: 0 auto;
-  margin-top: 3rem;
   padding: 2rem;
+  margin: auto;
 }
 
 .sign-in-icon {
