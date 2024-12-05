@@ -12,13 +12,15 @@ const HeaderAccount = () => {
     dispatch(fetchUserProfile());
   }, [dispatch]);
 
+  console.log(userProfile)
+
   return (
     <div className="header">
       {isEditing ? (
         <EditName setIsEditing={setIsEditing} /> 
       ) : (
         <>
-          <h1>Welcome back<br />{userProfile.userName} !</h1>
+          <h1>Welcome back<br />{userProfile?.userName} !</h1>
           <button className="edit-button" onClick={() => setIsEditing(true)}>Edit Name</button>
           <h2 className="sr-only">Accounts</h2>
         </>

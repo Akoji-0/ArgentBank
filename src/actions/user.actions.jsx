@@ -59,20 +59,18 @@ export const loginUser = (email, password, navigate, rememberMe) => {
 // Action to get the profil user
 export const fetchUserProfile = () => {
   return async (dispatch) => {
-    let token = localStorage.getItem("token");
+    const token = sessionStorage.getItem("token");
 
-    if (!token) {
-      token = sessionStorage.getItem("token");
-    }
+    console.log(token);
+    
 
     if (!token) {
       return;
     }
 
     try {
-      const response = await axios.post(
+      const response = await axios.get(
         "http://localhost:3001/api/v1/user/profile",
-        {},
         {
           headers: {
             Authorization: `Bearer ${token}`,
